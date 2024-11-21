@@ -38,6 +38,7 @@ h1 {
 }
 #content {
   margin-top: 5vh;
+  height: 63vh;
 }
 input[type="text"] {
   padding-left: 3vw;

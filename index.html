@@ -9,16 +9,35 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Waning!</title>
   </head>
   <body>
-    <h1>SJSH 음악 수행</h1>
-    <div id="content">
-      <button id="start" style="display: block; margin-left: 40vw">
-        문제 풀기
-      </button>
+    <div
+      id="warning"
+      style="
+        background-color: red;
+        color: yellow;
+        width: 100vw;
+        height: 100vh;
+        padding-top: vh;
+        font-size: 5vh;
+      "
+    >
+      <br /><br /><br /><br /><br />
+      모든 저작권은 음악의 저작권자 세종과학고등학교, 손원희에게 있으며 다른
+      곳에 함부로 공유, 유포할 시 법적 처벌을 받을 수 있음을 알려드립니다.<br />
+      <div id="sec" style="text-align: center">5</div>
     </div>
-    <script src="song.js"></script>
-    <script src="main.js"></script>
+    <script>
+      for (let i = 0; i < 4; i++) {
+        window.setTimeout(function () {
+          $("#sec").html(4 - i);
+        }, 1000 * i + 1000); // Delay based on i
+      }
+
+      window.setTimeout(function () {
+        window.location.href = "/quiz.html";
+      }, 1000 * 4 + 1000); // Redirect after the countdown is complete
+    </script>
   </body>
 </html>
