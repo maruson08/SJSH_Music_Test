@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "p8";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "p5";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+button {
+  font-family: "p5";
+  font-size: 3vw;
+  border: none;
+  width: 20vw;
+  height: 10vh;
+  background-color: rgb(64, 46, 122);
+  color: whitesmoke;
+  margin-top: 10vh;
+  border-radius: 2vh;
+}
+h1 {
+  font-size: 5vw;
+  font-family: "p8";
+  margin: 0;
+  background-color: rgb(64, 46, 122);
+  color: whitesmoke;
+  padding: 5%;
+}
+#content {
+  margin-top: 5vh;
+}
+input[type="text"] {
+  padding-left: 3vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 1.5vh;
+  display: block;
+  width: 70vw;
+  height: 5vh;
+  border: 2px solid rgba(75, 112, 245, 0.404);
+  border-radius: 5vh;
+  outline: none;
+}
+input:focus[type="text"] {
+  padding-left: 3vw;
+  height: 5vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  display: block;
+  width: 70vw;
+  border: 2px solid rgb(75, 112, 245);
+  border-radius: 5vh;
+  margin-bottom: 1.5vh;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 0.3s ease;
+}
