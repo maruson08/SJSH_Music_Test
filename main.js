@@ -21,7 +21,7 @@ function quiz() {
 
     let source = `
           <div style='margin: 0 auto; margin-bottom: 5vh'>
-            <audio id="quizAudio" controls ontimeupdate="restrictAudio(this)">
+            <audio id="quizAudio" controls controlsList="nodownload" ontimeupdate="restrictAudio(this)">
               <source src="/music/${songList[i][0]}..mp3" type="audio/mp3" />
             </audio>
           </div>
